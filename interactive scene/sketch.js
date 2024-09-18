@@ -11,34 +11,68 @@ function setup() {
 }
 
 function draw() {
-background("cyan");
-
-fill("Tan");
-square(0, 250, 800, 000);
-noStroke();
-
-
-fill("yellow");
-circle(50,40,60)
+  background("cyan");
+  
   
 
- fill("white");
- circle(50,50,50);
- circle(70,60,40);
- circle(90,50,50);
- circle(70,40,40);
- noStroke();
+
+  
+
  
- fill("Black");
- textSize(20);
- text("Jordan", 680, 380);
+   sun();
+  clouds();
+  sand();
+  name();
+  moon();
+}
 
+function sun(){
+  fill("yellow");
+  circle(50,40,60)
+  
 
-fill("gray")
- square(600, 150, 100)
 
 
 }
 
- 
+function clouds(){
+  fill("white");
+  circle(50,50,50);
+  circle(70,60,40);
+  circle(90,50,50);
+  circle(70,40,40);
+  noStroke();
+
+}
   
+function name(){
+  fill("Black");
+  textSize(20);
+  text("Jordan", 680, 380);
+
+
+}
+
+function sand(){
+  fill("Tan");
+  square(0, 250, 800, 0);
+  noStroke();
+
+
+
+}
+
+function moon(){
+  fill("gray");
+  circle(695, 40 ,50);
+  fill("cyan");
+  circle(675, 40, 50);
+
+}
+function turnToNight(){
+  if(keyIsPressed === "w"){
+ 
+  }
+
+
+}

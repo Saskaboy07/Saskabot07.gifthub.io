@@ -18,12 +18,12 @@ function draw() {
 
   
 
- 
+   night();
    sun();
-  clouds();
-  sand();
-  name();
-  moon();
+   clouds();
+   sand();
+   name();
+   moon();
 }
 
 function sun(){
@@ -69,9 +69,9 @@ function moon(){
   circle(675, 40, 50);
 
 }
-function turnToNight(){
+function night(){
   if(keyIsPressed === "w"){
- 
+ background("");
   }
 
 

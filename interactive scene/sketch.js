@@ -14,8 +14,8 @@ function setup() {
   noStroke();
 }
 
-function draw() {
-
+function draw() { 
+  mouseClicked()
   background(currentColor);
   turnNight();
   sun();
@@ -95,18 +95,3 @@ function mouseClicked(){
 
 }
 
-function move(){
-  if(keyPressed === true){
-
-    if(keyCode === LEFT_ARROW){
-      movenment = movenment - 1;
-    }
-
-    else if(keyCode === RIGHT_ARROW){
-      movenment = movenment + 1;
-    }
-
-  }
-  
-  
-}

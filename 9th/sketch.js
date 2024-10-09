@@ -41,7 +41,7 @@ function roundDist(x1, y1, x2, y2){
       if(d > 150) fill(0);
       else fill(100, 50, 250);
       circle(x,y,gridspaceing);
-      fill(250, 100);
+      fill(250, 150);
       textAlign(CENTER, CENTER);
       text(d, x,y);
 

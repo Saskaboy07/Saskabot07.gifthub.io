@@ -3,16 +3,20 @@
 // oct 22nd 2024
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(1000, 1000);
 }
 
 function draw() {
-  background(0);
+  background("green");
+  drawRoad();
 }
 
 
-function drawroad(){
-  
+function drawRoad(){
+  fill(0);
+  rectMode(CENTER);
+  rect(0,height/2, 2000,500);
+  line(0,height/2);  
 
 
 }

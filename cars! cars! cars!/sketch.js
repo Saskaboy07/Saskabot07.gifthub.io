@@ -16,7 +16,10 @@ function drawRoad(){
   fill(0);
   rectMode(CENTER);
   rect(0,height/2, 2000,500);
-  line(0,height/2);  
-
+  fill(255);
+  strokeWeight(5);
+  line(500, 200, 900, 200);
 
 }
+
+

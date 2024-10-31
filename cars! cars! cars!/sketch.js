@@ -16,10 +16,20 @@ function drawRoad(){
   fill(0);
   rectMode(CENTER);
   rect(0,height/2, 2000,500);
-  fill(255);
-  strokeWeight(5);
-  line(500, 200, 900, 200);
+  stroke(255);
+  drawingContext.setLineDash([20,20]);
+  line(0, height/2, 900, height/2);
+  noStroke();
 
 }
 
+class Vehicle{
+  //constructor
+  constructor(x, y, dir){
+    this.x = x;
+    this.y = y;
+    this.dir = dir;
+    this.c = color(random(255), random(255), random(255));
+  }
+}
 

@@ -1,5 +1,5 @@
 // cars! cars! cars!
-// jordan cartwright
+// jordan Cartwright
 // oct 22nd 2024
 
 function setup() {
@@ -8,7 +8,7 @@ function setup() {
 
 function draw() {
   background("green");
-  drawRoad();
+  drawRoad(); 
 }
 
 

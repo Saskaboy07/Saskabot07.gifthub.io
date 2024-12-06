@@ -9,13 +9,17 @@ let explosionImages = [];
 let shotsRemainImages = [];
 let targetsHitImages = [];
 
-
+let currentGame;
 
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
+  currentGame = new game();
 }
 
 function draw() {
-  image(backImage,0,0);
+ currentGame.play();
 }
+
+
+// video 2 9:24

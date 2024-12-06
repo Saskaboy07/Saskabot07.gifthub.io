@@ -23,6 +23,7 @@ class game{
     imageMode(CENTER);
     push();
     translate(73, 535);
+    push();
     rotate(radians(360 - this.connanangle));
     image(barrelImage,0,0);
     image(baseImage,0,0);

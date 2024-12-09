@@ -13,13 +13,38 @@ let currentGame;
 
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(1068, 600);
   currentGame = new game();
 }
 
 function draw() {
  currentGame.play();
+ quickInput();
+}
+
+function keyPressed(){
+  if (key === " "){
+    currentGame.createShot();
+  }
 }
 
 
-// video 2 9:24
+
+
+function quickInput(){
+  if(keyIsDown(LEFT_ARROW)){
+    currentGame.changeAngle(true);
+  }
+  if(keyIsDown(RIGHT_ARROW)){
+    currentGame.changeAngle(false);
+  }
+  if(keyIsDown(UP_ARROW)){
+    currentGame.changePower(true);
+  }
+  if(keyIsDown(DOWN_ARROW)){
+    currentGame.changePower(false);
+  }
+}
+
+
+//video 3 at 7:27

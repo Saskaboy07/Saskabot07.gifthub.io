@@ -2,6 +2,7 @@ function preload(){
     backImage = loadImage("assets/background.png");
     backImageReport = loadImage("assets/backgroundReport.png");
     barrelImage = loadImage("assets/barrel.png");
+    baseImage = loadImage("assets/base.png");
     cannonballImage = loadImage("assets/cannonball.png");
     targetImage = loadImage("assets/target.png");
   

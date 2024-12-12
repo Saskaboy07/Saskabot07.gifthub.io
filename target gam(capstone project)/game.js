@@ -3,6 +3,7 @@ class game{
         this.cannonAngle = 60;
         this.cannonPower = 10;
         this.shots = [];
+        //declare target
   }
 
   play(){
@@ -29,7 +30,11 @@ class game{
        }
     }
 
- //process and draw every stroke particle
+ //draw target
+
+
+ 
+    //process and draw every stroke particle
 
 
  //process and draw every explosion that is active

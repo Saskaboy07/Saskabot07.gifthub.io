@@ -11,7 +11,7 @@ class game{
     image(backImage, 0, 0);
 
     imageMode(CENTER);
-    //process and fraw every cannonball
+    //process and draw every cannonball
     for(let i = 0; i < this.shots.length; i++){
         let b = this.shots[i];
        b.move();
@@ -29,23 +29,23 @@ class game{
        }
     }
 
+ //process and draw every stroke particle
 
-    //process and draw every stroke particle
 
-
-    //process and draw every explosion that is active
+ //process and draw every explosion that is active
     
 
 
+  //draw the correct image for number of shots left and targets hit
+ 
 
-      //draw the correct image for number of shots left and targets hit
+
     
-    
-      //draw the cannon
+  //draw the cannon
     this.displayCannon();
     this.displayPower();
 
-  }
+    }
 
   createShot(){
       let v = createVector(this.cannonPower * cos(radians(this.cannonAngle)),

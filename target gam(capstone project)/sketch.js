@@ -45,6 +45,3 @@ function quickInput(){
     currentGame.changePower(false);
   }
 }
-
-
-//video 3 at 7:27

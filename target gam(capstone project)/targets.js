@@ -7,8 +7,8 @@ class target{
     }
 
 
-display(){
-    loadImage("assets/target.png");
+    display(){
+        loadImage("assets/target.png");
 }
 
 

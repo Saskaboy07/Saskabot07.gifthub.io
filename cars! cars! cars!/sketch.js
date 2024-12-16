@@ -31,5 +31,7 @@ class Vehicle{
     this.dir = dir;
     this.c = color(random(255), random(255), random(255));
   }
+  spawn(){
+    rect(this.x, this.y, 20, 20);
+  }
 }
-

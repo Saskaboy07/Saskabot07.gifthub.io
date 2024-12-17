@@ -6,8 +6,8 @@
 let backImage, backImageReport, barrelImage;
 let baseImage, cannonballImage, targetImage;
 let explosionImages = [];
+let targetsHitImagesRemainImages = [];
 let shotsRemainImages = [];
-let targetsHitImages = [];
 
 let currentGame;
 

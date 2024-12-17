@@ -3,6 +3,7 @@ class game{
         this.cannonAngle = 60;
         this.cannonPower = 10;
         this.shots = [];
+        this.target = new Target();
         //declare target
   }
 
@@ -31,7 +32,7 @@ class game{
     }
 
  //draw target
-
+    this.target.display();
 
  
     //process and draw every stroke particle
@@ -41,16 +42,25 @@ class game{
     
 
 
+    
+
+
   //draw the correct image for number of shots left and targets hit
- 
+  this.displayAmmo();
+  // this.displayCannonballs();
 
-
+  
     
   //draw the cannon
     this.displayCannon();
     this.displayPower();
 
-    }
+  }
+
+  displayAmmo(){
+    image(shotsRemainImages[7], 550,65)
+  }
+
 
   createShot(){
       let v = createVector(this.cannonPower * cos(radians(this.cannonAngle)),

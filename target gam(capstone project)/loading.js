@@ -17,7 +17,7 @@ function preload(){
     }
   
     for(let i = 0; i < 21; i++){
-      shotsRemainImages[i] = loadImage("assets/target"+i+".png");
+      targetsHitImages[i] = loadImage("assets/target"+i+".png");
   
     }
   }

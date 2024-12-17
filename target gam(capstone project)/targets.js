@@ -1,14 +1,15 @@
-class target{
+class Target{
     
 
     constructor(){
         this.x = 80
         this.y = 60
+        this.img =   loadImage("assets/target.png");
     }
 
 
     display(){
-        loadImage("assets/target.png");
+        image(this.img, this.x, this.y);
 }
 
 

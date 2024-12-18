@@ -38,4 +38,11 @@ class Ball{
             this.collisionType = 1;
         }
     }
+
+
+
+
+
+
+
 }

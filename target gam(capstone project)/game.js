@@ -47,7 +47,7 @@ class game{
 
   //draw the correct image for number of shots left and targets hit
   this.displayAmmo();
-  // this.displayCannonballs();
+ 
 
   
     
@@ -58,8 +58,10 @@ class game{
   }
 
   displayAmmo(){
-    image(shotsRemainImages[7], 550,65)
+    image(shotsRemainImages[20], 550,65)
   }
+
+
 
 
   createShot(){

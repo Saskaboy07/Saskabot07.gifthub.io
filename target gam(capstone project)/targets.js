@@ -9,12 +9,15 @@ class Target{
 
 
     display(){
-        print("x: " + this.x);
-        print("y: " + this.y);
-        image(this.img, this.x, this.y);
+         image(this.img, this.x, this.y);
 }
 
+moveTarget(){
+    this.x = random(200, 1000);
+    this.y = random(200, 500);
+}
 
+    
 
 
 }

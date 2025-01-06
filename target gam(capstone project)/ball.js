@@ -39,7 +39,17 @@ class Ball{
         }
     }
 
+    checkTargetCollision(){
+        //this.pos.x  this.pos.y  cannonball location 
+        //currentGame.target.x   currentGame.target.y   target loc
+        if (dist(this.pos.x, this.pos.y, currentGame.target.x, currentGame.target.y) < 30 ){
+            print("hit")
+            this.alive = false;
+            this.collisionType = 2;
+            currentGame.target.moveTarget();
+        }
 
+    }
 
 
 

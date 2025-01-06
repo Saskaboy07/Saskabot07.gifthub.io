@@ -19,6 +19,7 @@ class game{
        b.move();
        b.display();
        b.checkGroundCollision();
+       b.checkTargetCollision();
        //check the target collision
        if(b.getAlive()===false){
           if(b.getCollisionType()===1){
@@ -27,12 +28,18 @@ class game{
             this.shots.splice(i, 1);
             i--;
           }
+          else{
+            this.shots.splice(i, 1);
+            i--;
+
+          }
 
        }
     }
 
  //draw target
     this.target.display();
+    
 
  
     //process and draw every stroke particle
@@ -47,6 +54,7 @@ class game{
 
   //draw the correct image for number of shots left and targets hit
   this.displayAmmo();
+
  
 
   

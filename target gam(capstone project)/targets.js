@@ -5,6 +5,8 @@ class Target{
         this.x = random(200, 1000);
         this.y = random(200, 500);
         this.img =   loadImage("assets/target.png");
+        
+
     }
 
 

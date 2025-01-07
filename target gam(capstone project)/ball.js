@@ -47,6 +47,7 @@ class Ball{
             this.alive = false;
             this.collisionType = 2;
             currentGame.target.moveTarget();
+            currentGame.targetHits +=1
         }
 
     }

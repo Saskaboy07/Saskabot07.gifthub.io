@@ -4,6 +4,8 @@ class game{
         this.cannonPower = 10;
         this.shots = [];
         this.target = new Target();
+        this.targetHits = 0
+        this.shotsCount = 20
         //declare target
   }
 
@@ -54,6 +56,12 @@ class game{
 
   //draw the correct image for number of shots left and targets hit
   this.displayAmmo();
+  
+
+
+  //
+  this.displayTargets();
+  
 
  
 
@@ -66,16 +74,22 @@ class game{
   }
 
   displayAmmo(){
-    image(shotsRemainImages[20], 550,65)
+    image(shotsRemainImages[this.shotsCount], 520,65)
+  }
+
+  displayTargets(){
+    image(targetsHitImages[this.targetHits], 885,65)
+
   }
 
 
-
-
   createShot(){
+    if(currentGame.shotsCount > 0 ){
       let v = createVector(this.cannonPower * cos(radians(this.cannonAngle)),
       this.cannonPower * sin(radians(this.cannonAngle)*-1));
-      this.shots.push(new Ball(v)); 
+      this.shots.push(new Ball(v));
+      currentGame.shotsCount -=1 
+    }
   }
 
   displayCannon(){

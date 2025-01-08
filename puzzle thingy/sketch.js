@@ -42,6 +42,9 @@ function flip(col, row){
     if (row >= 0 && row < NUM_ROWS){
       if (gridData[row][col] === 0) gridData[row][col] = 255;
       else gridData[row][col] = 0;
+
+
+
     }
   }
 }
@@ -62,4 +65,14 @@ function drawGrid(){
   }
 }
 
+ function shiftpressed(){
+  if(keyIsPressed(SHIFT)){
+    
 
+
+  }
+    
+  
+
+  
+}

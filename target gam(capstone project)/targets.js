@@ -1,3 +1,5 @@
+//let targetStop = 
+
 class Target{
     
 
@@ -11,7 +13,10 @@ class Target{
 
 
     display(){
+      //  if(test){
          image(this.img, this.x, this.y);
+      //  }
+         
 }
 
 moveTarget(){

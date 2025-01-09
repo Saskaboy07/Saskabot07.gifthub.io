@@ -10,6 +10,7 @@ class game{
   }
 
   play(){
+    if(this.shotsCount > 0 || this.shots.length > 0){
     //called once per frame (acts like draw)
     imageMode(CORNER);
     image(backImage, 0, 0);
@@ -38,7 +39,25 @@ class game{
 
        }
     }
+    }
+    //reporting screen
+    else{
+      imageMode(CORNER);
+      image(backImageReport, 0, 0);
+      imageMode(CENTER);
+      //display some text telling them how they did
 
+      //check for the user preesing enter to play again  key/isDown()
+      //set shotscount to 20
+      if(keyIsDown(ENTER)){
+        this.shotsCount = 20
+        this.targetHits = 0
+   
+        
+      }
+
+
+    }
  //draw target
     this.target.display();
     

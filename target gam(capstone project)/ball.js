@@ -46,6 +46,7 @@ class Ball{
             print("hit")
             this.alive = false;
             this.collisionType = 2;
+            currentGame.explosions.push(new Explosion(currentGame.target.x, currentGame.target.y))
             currentGame.target.moveTarget();
             currentGame.targetHits +=1;
         }

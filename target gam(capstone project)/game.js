@@ -6,6 +6,7 @@ class game{
         this.target = new Target();
         this.targetHits = 0
         this.shotsCount = 20
+        this.explosions = [];
         //declare target
   }
 
@@ -49,9 +50,11 @@ class game{
 
       //check for the user preesing enter to play again  key/isDown()
       //set shotscount to 20
+      text("click Enter To Play Again",  100,100,100);
       if(keyIsDown(ENTER)){
         this.shotsCount = 20
         this.targetHits = 0
+        
    
         
       }
@@ -67,7 +70,18 @@ class game{
 
 
  //process and draw every explosion that is active
+ for(let i = 0; i < this.explosions.length; i++){
+  let b = this.explosions[i];
+   b.display();
+   if(b.active === false){
+    this.explosions.splice(i, 1);
+            i--;
     
+   }
+
+ }
+
+
 
 
     

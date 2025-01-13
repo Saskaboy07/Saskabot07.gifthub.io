@@ -7,10 +7,14 @@ class game{
         this.targetHits = 0
         this.shotsCount = 20
         this.explosions = [];
+       
+
         //declare target
+       
   }
 
-  play(){
+ 
+play(){
     if(this.shotsCount > 0 || this.shots.length > 0){
     //called once per frame (acts like draw)
     imageMode(CORNER);
@@ -46,14 +50,25 @@ class game{
       imageMode(CORNER);
       image(backImageReport, 0, 0);
       imageMode(CENTER);
-      //display some text telling them how they did
+      if(songStart=== false){
+        songGame.play();
+        songStart = true;
+       
 
+
+      }
+      
+      //display some text telling them how they did
+      textAlign(CENTER);
+      textSize(30);
+      text("You Got " + currentGame.targetHits + " Targets", 510, 350);
+      this.targetHits/20 * 100
       //check for the user preesing enter to play again  key/isDown()
       //set shotscount to 20
       
       textAlign(CENTER);
       textSize(30);
-      text("Press Enter To Play Again",  500,500);
+      text("Press Enter To Play Again",  510,520);
       if(keyIsDown(ENTER)){
         this.shotsCount = 20
         this.targetHits = 0
@@ -69,7 +84,7 @@ class game{
     
 
  
-    //process and draw every stroke particle
+    //process and draw every smoke particle
 
 
  //process and draw every explosion that is active
@@ -185,4 +200,3 @@ class game{
 
 
 }
-//test

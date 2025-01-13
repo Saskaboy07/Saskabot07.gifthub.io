@@ -5,6 +5,7 @@ function preload(){
     baseImage = loadImage("assets/base.png");
     cannonballImage = loadImage("assets/cannonball.png");
     targetImage = loadImage("assets/target.png");
+    songGame = loadSound("assets/goodjob.mp3");
   
     for(let i = 0; i < 6; i++){
       explosionImages[i] = loadImage("assets/ex"+(i+1)+".png");

@@ -8,7 +8,7 @@ let baseImage, cannonballImage, targetImage;
 let explosionImages = [];
 let shotsRemainImages = [];
 let targetsHitImages = [];
-
+let songStart = false
 let currentGame;
 
 

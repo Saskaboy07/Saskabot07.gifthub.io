@@ -50,7 +50,10 @@ class game{
 
       //check for the user preesing enter to play again  key/isDown()
       //set shotscount to 20
-      text("click Enter To Play Again",  100,100,100);
+      
+      textAlign(CENTER);
+      textSize(30);
+      text("Press Enter To Play Again",  500,500);
       if(keyIsDown(ENTER)){
         this.shotsCount = 20
         this.targetHits = 0

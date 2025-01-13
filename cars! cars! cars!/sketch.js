@@ -3,6 +3,8 @@
 // oct 22nd 2024
 
 let car
+let eastbound = [];
+let westbound = [];
 
 function setup() {
   createCanvas(1000, 1000);
